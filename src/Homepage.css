@@ -1,0 +1,24 @@
+.page {
+    overflow: hidden;
+    background-color: #D4B4B7;
+}
+
+.light-mode {
+    background-color: #D4B4B7;
+    color: #333333;
+}
+
+.dark-mode {
+    background-color: #333333;
+    color: #D4B4B7;
+}
+
+.switch {
+    display: flex;
+    justify-content: end;
+    top:48px;
+    margin-right: 130px;
+    z-index: 10;
+    position: relative;
+    background-color: blued;
+}

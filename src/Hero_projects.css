@@ -1,0 +1,53 @@
+.projectsection{
+  max-height: 680px;
+  overflow: hidden;
+  
+  scroll-behavior: smooth;
+}
+
+.project_bg{
+    background-color: #CCE6DE;
+    overflow-x: hidden;
+}
+
+.cross-button{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    position: relative;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.project-title{
+    display: grid;
+    margin-right: 90px;
+    justify-content: flex-end;
+    line-height: 0.1em;
+    z-index: 2;
+    position: relative;
+    top: -300px;
+    color: #4E4D4D;
+    font-size: 1.4em;
+}
+
+.pinkz{
+    z-index: 9;
+    position: absolute;
+    width: 520px;
+    left: 424px;
+    top: 30px;
+    animation: movement 1.5s ease;
+    transform-origin: top;
+}
+
+@keyframes movement {
+    0% {
+        transform: translateX(30px);
+      transform: rotate(5deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }

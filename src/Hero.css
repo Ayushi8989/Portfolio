@@ -1,0 +1,55 @@
+.main{
+    max-height: 521px;
+    max-width: 1721px;
+}
+.animatedgwen{
+    width: 350px;
+    z-index: 4;
+    position: absolute;
+    top:-20px;
+    margin-left: 120px;
+}
+
+.leg{
+    z-index: 4;
+    position: absolute;
+    top:295px;
+    margin-left: 176px;
+
+    animation: legMovement 4s infinite;
+    transform-origin: top;
+  }
+  
+  @keyframes legMovement {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.shadow{
+  z-index: 5;
+  position: relative;
+  top: 495px;
+  left: 130px;
+}
+
+.bg-asset{
+    z-index:3;
+    position: relative;
+    top:-150px;
+}
+
+.Developer{
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    position:relative;
+    top:-700px;
+    left:370px;
+}
