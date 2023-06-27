@@ -1,53 +1,62 @@
-.projectsection{
-  max-height: 680px;
-  overflow: hidden;
-  
-  scroll-behavior: smooth;
+.projectsection {
+  max-height: 100vh;
+  background-color: #CCE6DE;
+  /* cursor: url('images/pointer.png'), pointer; */
 }
 
-.project_bg{
-    background-color: #CCE6DE;
-    overflow-x: hidden;
+.buildings{
+  background-color: #CCE6DE;
+}
+.img-buildings{
+  width: 100%;
+  bottom:0;
+  position: fixed;
+  background-color: #CCE6DE;
 }
 
-.cross-button{
-    display: flex;
-    justify-content: flex-end;
-    z-index: 10;
-    position: relative;
-    padding-top: 50px;
-    padding-right: 50px;
+.cross-button {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 12;
+  position: relative;
+  padding-top: 80px;
+  margin-right: 10px;
 }
 
-.project-title{
-    display: grid;
-    margin-right: 90px;
-    justify-content: flex-end;
-    line-height: 0.1em;
-    z-index: 2;
-    position: relative;
-    top: -300px;
-    color: #4E4D4D;
-    font-size: 1.4em;
+.project-title {
+  display: grid;
+  margin-right: 90px;
+  justify-content: flex-end;
+  line-height: 0.1em;
+  z-index: 2;
+  position: relative;
+  top:  65vh;
+  color: #4E4D4D;
+  font-size: 2.5vh;
 }
 
-.pinkz{
-    z-index: 9;
-    position: absolute;
-    width: 520px;
-    left: 424px;
-    top: 30px;
-    animation: movement 1.5s ease;
-    transform-origin: top;
+.project-title a {
+  text-decoration: none;
+  color: #4E4D4D;
+}
+
+.pinkz {
+  width: 80vh;
+  z-index: 11;
+  position: absolute;
+  right: 0vh;
+  top: 50px;
+  animation: movement 1s ease;
+  transform-origin: center;
 }
 
 @keyframes movement {
-    0% {
-        transform: translateX(30px);
-      transform: rotate(5deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
+  0% {
+    transform: translateX(50px);
+    transform: rotate(3deg);
   }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

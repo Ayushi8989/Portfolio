@@ -1,15 +1,13 @@
-import './App.css';
+import './Project.css';
 import React from "react";
-import Footer from './Footer';
 import HeroProjects from './Hero_projects';
 import './Project.css';
 
 function App() {
-    return (
-      <div className='container'>
-        <HeroProjects />
-        <Footer />
-      </div>
+  return (
+    <div className='container'>
+      <HeroProjects />
+    </div>
   );
 }
 

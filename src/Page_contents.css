@@ -1,0 +1,81 @@
+.cross-button {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  position: relative;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.classic{
+  z-index: 11;
+  position: absolute;
+  top: -1px;
+  right: 250px;
+  animation: move 6s infinite;
+}
+
+@keyframes move{
+  0%{
+    transform: rotate(3deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(3deg);
+  }
+}
+
+.portal{
+  width:150vh;
+  z-index: 11;
+  position: relative;
+  top: -100px;
+  left: -100px;
+  animation: rotation 800s infinite;
+  transform-origin: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.title {
+  display: grid;
+  margin-right: 90px;
+  justify-content: flex-end;
+  line-height: 0.1em;
+  z-index: 10;
+  position: relative;
+  top:  -85vh;
+  color: #4E4D4D;
+  font-size: 2.5vh;
+}
+
+.title a {
+  text-decoration: none;
+  color: #4E4D4D;
+}
+
+.title a:hover{
+  transition: compress 1s infinite;
+  transform-origin: left;
+}
+
+@keyframes compress {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

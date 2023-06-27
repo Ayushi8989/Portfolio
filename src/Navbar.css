@@ -1,13 +1,11 @@
-.Nav-contents{
-    list-style: none;
-    display: flex;
-    justify-content: end;
-    z-index: 10;
-    position: relative;
+.Nav-contents {
+  list-style: none;
+  z-index: 10;
+  position: fixed;
+  right: 1vh;
+  top: 28px;
+}
 
-  }
-  
-  .Nav-contents > li{
-    margin-right: 50px;
-  }
-
+.Nav-contents>li {
+  margin-right: 50px;
+}

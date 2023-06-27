@@ -15,5 +15,5 @@ code {
 @font-face {
   font-family: "Phonk Regular Demo";
   src: local("Phonk Regular Demo"),
-   url("./fonts/Phonk\ Regular\ DEMO.otf") format("truetype");
- }
+    url("./fonts/Phonk\ Regular\ DEMO.otf") format("truetype");
+}

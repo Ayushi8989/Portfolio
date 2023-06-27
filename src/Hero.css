@@ -1,55 +1,120 @@
-.main{
-    max-height: 521px;
-    max-width: 1721px;
-}
-.animatedgwen{
-    width: 350px;
-    z-index: 4;
-    position: absolute;
-    top:-20px;
-    margin-left: 120px;
+.main {
+  max-height: 100vh;
 }
 
-.leg{
+.animatedgwen {
+  width: 50vh;
+  z-index: 4;
+  position: absolute;
+  top: -20px;
+  margin-left: 20vh;
+  position: fixed;
+}
+
+  .animatedgwen {
+    width: 50vh;
     z-index: 4;
-    position: absolute;
-    top:295px;
-    margin-left: 176px;
-
-    animation: legMovement 4s infinite;
-    transform-origin: top;
-  }
-  
-  @keyframes legMovement {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(10deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+    top: -20px;
+    margin-left: 20vh;
+    position: fixed;
   }
 
-.shadow{
+.leg {
+  z-index: 4;
+  top: 44vh;
+  width: 11vh;
+  margin-left: 27.2vh;
+  animation: legMovement 4s infinite;
+  transform-origin: top;
+  position: fixed;
+}
+
+@keyframes legMovement {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.shadow {
   z-index: 5;
+  position: fixed;
+  top: 83vh;
+  left: 20vh;
+  width: 40vh;
+}
+
+.bg-asset {
+  width: 180vh;
+  z-index: 3;
   position: relative;
-  top: 495px;
-  left: 130px;
+  top: -150px;
 }
 
-.bg-asset{
-    z-index:3;
-    position: relative;
-    top:-150px;
+.text{
+  display: flex;
+  margin-right: 40px;
+  justify-content: center;
+  z-index: 13;
+  position: relative;
+  bottom: 736px;
+  left: 147px;
+  font-size: 0.8em;
+  color:#9B7C8B;
 }
 
-.Developer{
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-    position:relative;
-    top:-700px;
-    left:370px;
+.Developer {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  position: fixed;
+  top: 30vh;
+  right: 1vh
+}
+
+.icons{
+  display: flex;
+  justify-content: flex-end;
+  z-index: 13;
+  position: fixed;
+  top: 68vh;
+  right: 12vh;
+  font-size: 1.9em;
+}
+
+.icons > li{
+  list-style: none;
+  margin-left: 18px;
+  padding: 2px;
+}
+
+.icons > li > a{
+  text-decoration: none;
+  color: #9B7C8B;
+}
+
+.icons .twitter :hover{
+  color: #00acee;
+}
+
+.icons .linkedin :hover{
+  color: #0e76a8;
+}
+
+.icons .github{
+  font-size: 1.1em;
+}
+.icons .github :hover{
+  color: #211F1F;
+}
+
+.icons .dribble :hover{
+  color: #ea4c89;
 }
