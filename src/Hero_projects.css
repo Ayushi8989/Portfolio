@@ -1,3 +1,4 @@
+
 .projectsection {
   max-height: 100vh;
   background-color: #CCE6DE;
@@ -17,33 +18,16 @@
 .cross-button {
   display: flex;
   justify-content: flex-end;
-  z-index: 12;
-  position: relative;
+  z-index: 11;
+  position: fixed;
   padding-top: 80px;
   margin-right: 10px;
-}
-
-.project-title {
-  display: grid;
-  margin-right: 90px;
-  justify-content: flex-end;
-  line-height: 0.1em;
-  z-index: 2;
-  position: relative;
-  top:  65vh;
-  color: #4E4D4D;
-  font-size: 2.5vh;
-}
-
-.project-title a {
-  text-decoration: none;
-  color: #4E4D4D;
 }
 
 .pinkz {
   width: 80vh;
   z-index: 11;
-  position: absolute;
+  position: fixed;
   right: 0vh;
   top: 50px;
   animation: movement 1s ease;
@@ -60,3 +44,43 @@
     transform: rotate(0deg);
   }
 }
+
+.work{
+  z-index: 11;
+  position:relative;
+  list-style: none; 
+  top: 60vh;
+  margin-right: 70px;
+  color: #4E4D4D;
+  margin-bottom: 20px;
+}
+
+.contents{
+  display: grid;
+  justify-content: flex-end;
+  font-size: 3vh;
+}
+
+.contents >li{
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  transition: transform 0.2s ease-in-out;
+  height: 50px;
+}
+
+
+.arrow-right{
+  visibility: hidden;
+  margin-right: 10px;
+}
+
+.contents >li:hover{
+  .arrow-right{
+    visibility: visible;
+  }
+  transform: translateX(20px);
+  transition: transform 0.3s ease-in-out;
+  transform-style: smooth;
+}
+
