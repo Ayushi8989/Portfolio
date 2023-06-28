@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState } from "react";
 import ReactSwitch from "react-switch";
 import Hero from './Hero';
-import Navbar from './Navbar';
 import Footer from './Footer';
 import './Homepage.css'
 
@@ -31,7 +30,6 @@ function App() {
             width={50}
           />
         </div>
-        <Navbar />
         <Hero />
         <Footer />
       </div>

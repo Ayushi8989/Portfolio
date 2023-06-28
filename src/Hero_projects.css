@@ -2,7 +2,7 @@
 .projectsection {
   max-height: 100vh;
   background-color: #CCE6DE;
-  /* cursor: url('images/pointer.png'), pointer; */
+  cursor: url('images/pointer.png'), pointer;
 }
 
 .buildings{
@@ -18,7 +18,7 @@
 .cross-button {
   display: flex;
   justify-content: flex-end;
-  z-index: 11;
+  z-index: 12;
   position: fixed;
   padding-top: 80px;
   margin-right: 10px;
@@ -27,7 +27,7 @@
 .pinkz {
   width: 80vh;
   z-index: 11;
-  position: fixed;
+  position: absolute;
   right: 0vh;
   top: 50px;
   animation: movement 1s ease;

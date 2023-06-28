@@ -2,6 +2,18 @@
   max-height: 100vh;
 }
 
+.Nav-contents {
+  list-style: none;
+  z-index: 10;
+  position: fixed;
+  right: 1vh;
+  top: 28px;
+}
+
+.Nav-contents>li {
+  margin-right: 50px;
+}
+
 .animatedgwen {
   width: 50vh;
   z-index: 4;
