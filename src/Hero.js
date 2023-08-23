@@ -27,7 +27,7 @@ export default function MainPage() {
             const parentComputedStyle = window.getComputedStyle(parent);
             const parentBackgroundColor = parentComputedStyle.backgroundColor;
 
-            const isLightMode = parentBackgroundColor === 'rgb(212, 181, 183)';
+            const isLightMode = parentBackgroundColor === 'rgb(212, 180, 183)';
             setIsLightMode(isLightMode);
         };
 
@@ -42,16 +42,18 @@ export default function MainPage() {
     return (
         <div className="main" ref={elementRef}>
             <nav>
-      <ul className="Nav-contents">
-        <li>
-          <Link to="/Projects"><img src={isLightMode? grid : dark_grid} alt="grid-icon" className="grid-icon" /></Link>
-        </li>
-      </ul>
-    </nav>
-            <img src={isLightMode ? animatedgwen : dark_gwen} alt="animatedgwen" className="animatedgwen" />
-            <img src={animated_leg} alt="leg" className="leg" />
-            <img src={isLightMode ? shadow : dark_shadow} alt="shadow" className="shadow" />
-            <img src={bg_asset} alt="bg-asset" className="bg-asset" />
+                <ul className="Nav-contents">
+                    <li>
+                        <Link to="/Projects"><img src={isLightMode ? grid : dark_grid} alt="grid-icon" className="grid-icon" /></Link>
+                    </li>
+                </ul>
+            </nav>
+            <div className="mascot">
+                <img src={isLightMode ? animatedgwen : dark_gwen} alt="animatedgwen" className="animatedgwen" />
+                <img src={animated_leg} alt="leg" className="leg" />
+                <img src={isLightMode ? shadow : dark_shadow} alt="shadow" className="shadow" />
+                <img src={bg_asset} alt="bg-asset" className="bg-asset" />
+            </div>
             <div className="Developer">
                 <img src={DD} alt="DD" />
             </div>
@@ -60,7 +62,7 @@ export default function MainPage() {
                     <FontAwesomeIcon icon="fa-brands fa-twitter"
                         style={{ color: colour, }} className="twitter" /></Link>
                 </li>
-                <li><Link to="https://dribbble.com/_ayushhee">
+                <li><Link to="https://dribbble.com/ayushhee">
                     <FontAwesomeIcon icon="fa-brands fa-dribbble"
                         style={{ color: colour, }} className="dribble" /></Link>
                 </li>
@@ -68,7 +70,7 @@ export default function MainPage() {
                     <FontAwesomeIcon icon="fa-brands fa-github"
                         style={{ color: colour, }} className="github" /></Link>
                 </li>
-                <li><Link to="https://www.linkedin.com/in/ayushi-singh-3660a6229/">
+                <li><Link to="https://www.linkedin.com/in/ayushhee">
                     <FontAwesomeIcon icon="fa-brands fa-linkedin-in"
                         style={{ color: colour, }} className="linkedin" /></Link>
                 </li>

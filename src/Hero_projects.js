@@ -71,25 +71,42 @@ export default function HeroProjects() {
           <div className="contents">
           <li>
             <div className='font-face-gm'>
+              <a href='https://github.com/Ayushi8989/Vitt-kosh'>
               <h3>
                 <span className='arrow-right'>
                   <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
                 </span>
                 Vitt Kosh
               </h3>
+              </a>
             </div>
-            <h3>UI/UX Design</h3>
+            <h3>App & UI/UX Design</h3>
           </li>
           <li>
             <div className='font-face-gm'>
+            <a href='https://github.com/Ayushi8989/Krita'>
               <h3>
                 <span className='arrow-right'>
                   <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
                 </span>
                 Krita
               </h3>
+              </a>
             </div>
-            <h3>UI/UX Design</h3>
+            <h3>App & UI/UX Design</h3>
+          </li>
+          <li>
+            <div className='font-face-gm'>
+            <a href='https://devfolio.co/projects/ikshana-99cf'>
+              <h3>
+                <span className='arrow-right'>
+                  <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
+                </span>
+                Ikshana
+              </h3>
+              </a>
+            </div>
+            <h3>Web</h3>
           </li>
             <li>
             <div className='font-face-gm'>
@@ -113,17 +130,6 @@ export default function HeroProjects() {
             </div>
             <h3>3D-Modelling</h3>
           </li>
-          <li>
-            <div className='font-face-gm'>
-              <h3>
-                <span className='arrow-right'>
-                  <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
-                </span>
-                Vaporflow
-              </h3>
-            </div>
-            <h3>Branding</h3>
-          </li>
           
           
           </div>
@@ -132,4 +138,3 @@ export default function HeroProjects() {
     </div>
   );
 };
-
