@@ -23,3 +23,9 @@
     position: fixed;
     background-color: blued;
 }
+
+@media only screen and (max-width: 500px){
+    .switch{
+        right: 100px;
+    }
+}

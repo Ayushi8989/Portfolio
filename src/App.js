@@ -1,11 +1,15 @@
 import './App.css';
-import React from "react";
+import React, {useEffect} from "react";
 import Homepage from "./Homepage";
 import { Routes, Route } from 'react-router-dom';
-import Projects from "./Project";
 import Page from "./Page";
+import Projects from "./Project";
 
 function App() {
+  useEffect(() => {
+    document.title = "Portfolio | ayushhee"; 
+  }, []);
+
   return (
     <>
       <Routes>

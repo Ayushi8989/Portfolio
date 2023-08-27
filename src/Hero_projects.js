@@ -1,14 +1,41 @@
-import React, { useState } from 'react';
-import project_bg from './images/bg-project.png';
+import React, { useEffect, useRef, useState }  from 'react';
+import bg_project from './images/bg-project.png';
+import dark_project_bg from './images/dark_bg_project.png';
 import './Hero_projects.css';
 import back_button from './images/back_icon.png';
-import pinkz from './images/anim.png'
+import anim from './images/anim.png'
+import dark_anim from './images/dark_anim.png'
 import { Link } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.min.js';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import backicon_dark from './images/backicon_dark.png';
 
 export default function HeroProjects() {
+  const elementRef = useRef(null);
+    const [isLightMode, setIsLightMode] = useState(true);
+
+    useEffect(() => {
+        const element = elementRef.current;
+        const parent = element.parentElement;
+
+        const observerCallback = (mutationsList) => {
+            const parentComputedStyle = window.getComputedStyle(parent);
+            const parentBackgroundColor = parentComputedStyle.backgroundColor;
+
+            const isLightMode = parentBackgroundColor === 'rgb(204, 230, 222)';
+            setIsLightMode(isLightMode);
+        };
+
+        const observer = new MutationObserver(observerCallback);
+        observer.observe(parent, { attributes: true });
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+    var colour = isLightMode ? 'rgb(204, 230, 222)' : 'rgb(118, 96, 166)';
+
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -19,9 +46,8 @@ export default function HeroProjects() {
     }, 10);
   };
 
-
-
   return (
+    <div className='projectsection' ref={elementRef}>
     <div onMouseMove={handleMouseMove}>
       <div
         className="cursor-rounded"
@@ -55,17 +81,17 @@ export default function HeroProjects() {
           pointerEvents: 'none'
         }}
       ></div>
-      <div className='projectsection'>
+      
         <div className="rounded"></div>
         <div className="pointed"></div>
         <div className='cross-button'>
-          <Link to="/"><img src={back_button} alt="back" className="back_button" /></Link>
+          <Link to="/"><img src={isLightMode?back_button: backicon_dark} alt="back" className="back_button" /></Link>
         </div>
         <div className='buildings'>
-          <img src={project_bg} alt="project_bg" className="img-buildings" />
+          <img src={isLightMode ? bg_project: dark_project_bg} alt="project_bg" className="img-buildings" />
         </div>
         <div className="pinkz">
-          <img src={pinkz} alt='pinkz' className='pinkz' />
+          <img src={isLightMode ? anim: dark_anim} alt='pinkz' className='pinkz' />
         </div>
         <div className="work">
           <div className="contents">

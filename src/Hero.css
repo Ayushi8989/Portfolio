@@ -135,6 +135,15 @@
     display: flex;
     justify-content: center;
   }
+  .icons{
+    right: -35vw;
+    bottom:25vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 @media only screen and (max-width: 820px) {
@@ -143,6 +152,14 @@
   }
   .leg{
     margin-left: 18.7vh;
+  }
+  .icons{
+    left:180px;
+    bottom:40vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -165,7 +182,12 @@
     top: 40vh;
   }
   .icons{
-    top: 60vw;
+    left:0px;
+    bottom:10vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -185,7 +207,12 @@
     top: 40vh;
   }
   .icons{
-    top: 60vh;
+    left:0px;
+    bottom: 40vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -198,7 +225,7 @@
   }
   .icons{
     left:0px;
-    bottom:70vw;
+    bottom:45vw;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -206,6 +233,9 @@
   }
   .main{
     max-height: 900px;
+  }
+  .Nav-contents{
+    right: -10px
   }
 }
 

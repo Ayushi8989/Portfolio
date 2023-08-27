@@ -1,18 +1,15 @@
 
 .projectsection {
   height: 100vh;
-  background-color: #CCE6DE;
+  /* background-color: #CCE6DE; */
   /* cursor: url('images/pointer.png'), pointer; */
 }
 
-.buildings{
-  background-color: #CCE6DE;
-}
 .img-buildings{
   width: 100%;
   bottom:0;
   position: fixed;
-  background-color: #CCE6DE;
+  /* background-color: #CCE6DE; */
 }
 
 .cross-button {
@@ -20,8 +17,8 @@
   justify-content: flex-end;
   z-index: 12;
   position: fixed;
-  padding-top: 80px;
-  margin-right: 10px;
+  padding-top: 45px;
+  right: 10px;
 }
 
 .pinkz {
@@ -52,7 +49,6 @@
   list-style: none; 
   top: 60vh;
   margin-right: 70px;
-  color: #4E4D4D;
   margin-bottom: 20px;
 }
 
@@ -86,6 +82,14 @@
   .contents >li{ 
     width: 80vw;
   }
+
+  .cross-button{
+    right: -10px;
+  }
+
+  .sswitch{
+    right: 80px;
+  }
 }
 
 
@@ -114,5 +118,22 @@
 
 a{
   text-decoration: none;
+}
+
+.darkk-mode{
+  background-color: #7660A6;
+  color: #aaa8a8;
+}
+
+.darkk-mode a{
+  color: #aaa8a8;
+}
+
+.lightt-mode{
+  background-color: #CCE6DE;
+  color: #4E4D4D;
+}
+
+.lightt-mode a{
   color: #4E4D4D;
 }

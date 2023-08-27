@@ -15,6 +15,7 @@ import dark_shadow from "./images/dark_shadow.png"
 import grid from "./images/grid_icon.png";
 import dark_grid from "./images/dark_grid.png";
 
+
 export default function MainPage() {
     const elementRef = useRef(null);
     const [isLightMode, setIsLightMode] = useState(true);
@@ -39,8 +40,55 @@ export default function MainPage() {
         };
     }, []);
     var colour = isLightMode ? 'rgb(156, 124, 139)' : 'rgb(26, 26, 26)';
-    return (
+    
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+    const handleMouseMove = (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      setTimeout(() => {
+        setMousePosition({ x: mouseX, y: mouseY });
+      }, 10);
+    };
+  
+
+
+  return (
+    
         <div className="main" ref={elementRef}>
+            <div onMouseMove={handleMouseMove}>
+      <div
+        className="cursor-rounded"
+        style={{
+          position: 'fixed',
+          top: mousePosition.y,
+          left: mousePosition.x,
+          transform: 'translate(-50%, -50%)',
+          transformStyle: 'smooth',
+          width: '20px',
+          height: '20px',
+          borderRadius: '50%',
+          border: '3px solid white',
+          zIndex: 9999,
+          pointerEvents: 'none'
+        }}
+      ></div>
+      <div
+        className="cursor-pointed"
+        style={{
+          position: 'fixed',
+          top: mousePosition.y,
+          left: mousePosition.x,
+          transform: 'translate(-50%, -50%)',
+          transformStyle: 'decimal',
+          width: '5px',
+          height: '5px',
+          borderRadius: '50%',
+          backgroundColor: 'white',
+          zIndex: 9999,
+          pointerEvents: 'none'
+        }}
+      ></div>
             <nav>
                 <ul className="Nav-contents">
                     <li>
@@ -76,6 +124,6 @@ export default function MainPage() {
                 </li>
             </div>
         </div>
-
+</div>
     );
 }
